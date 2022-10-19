@@ -2,11 +2,12 @@
   "name": "@pkwasniok/przelewy24",
   "version": "0.1.0",
   "description": "Przelewy24 Typescript rest api wrapper",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "server": "node test/server.js"
+    "prepublish": "tsc"
   },
   "keywords": [
     "typescript",
@@ -17,6 +18,9 @@
   ],
   "author": "pkwasniok",
   "license": "ISC",
+  "repository": {
+    "url": "https://github.com/pkwasniok/przelewy24"
+  },
   "dependencies": {
     "@types/express": "^4.17.14",
     "@types/node": "^18.11.2",
